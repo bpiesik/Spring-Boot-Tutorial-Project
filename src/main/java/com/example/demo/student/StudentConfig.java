@@ -11,6 +11,7 @@ import java.util.List;
 @Configuration
 public class StudentConfig {
 
+    // Fill the database at start of program with 2 student entrys
     @Bean
     CommandLineRunner commandLineRunner(StudentRepository studentRepository) {
         return args -> {
